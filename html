@@ -1,0 +1,388 @@
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Relatório Completo – Campanhas Google Ads | Money Way Câmbio</title>
+<style>
+  :root{
+    --bg:#f7f8fa;
+    --card:#ffffff;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --brand:#0a4d8c;
+    --accent:#16a34a;
+    --danger:#dc2626;
+    --warning:#f59e0b;
+    --line:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family: Inter, Arial, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", sans-serif; background:var(--bg); color:var(--ink);}
+  .wrap{max-width:1100px; margin:40px auto; padding:0 20px;}
+  header{ text-align:center; margin-bottom:28px;}
+  header h1{margin:0 0 8px; font-size:28px; color:var(--brand);}
+  header p{margin:0; color:var(--muted);}
+  .grid{display:grid; gap:18px;}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:960px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 2px 10px rgba(2,6,23,0.04)}
+  h2{margin:0 0 12px; font-size:20px; color:var(--brand)}
+  h3{margin:0 0 10px; font-size:16px; color:#0f172a}
+  .kpis{display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:8px}
+  @media (max-width:960px){.kpis{grid-template-columns:repeat(2,1fr)}}
+  .kpi{border:1px dashed var(--line); border-radius:12px; padding:12px; background:#fbfdff}
+  .kpi .label{font-size:12px; color:var(--muted)}
+  .kpi .value{font-size:18px; font-weight:700; margin-top:2px}
+  .kpi .delta{font-size:12px; margin-top:6px; font-weight:600}
+  .delta.up{color:var(--accent)}
+  .delta.down{color:var(--danger)}
+  .tag{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef6ff; color:var(--brand); font-weight:600; font-size:12px}
+  .pill{display:inline-flex; align-items:center; gap:6px; background:#f1f5f9; color:#0f172a; border-radius:999px; padding:6px 10px; font-size:12px; font-weight:600}
+  .row{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
+  .bar{height:10px; border-radius:8px; background:#eef2f7; overflow:hidden}
+  .bar > span{display:block; height:100%; background:linear-gradient(90deg, #15803d, #22c55e)}
+  .list{margin:8px 0 0 0; padding:0 0 0 18px}
+  .note{font-size:13px; color:var(--muted)}
+  .callout{border-left:4px solid var(--brand); padding:10px 12px; background:#f8fbff; border-radius:8px}
+  .checklist li{margin-bottom:6px}
+  .badge{display:inline-block; padding:4px 8px; border-radius:8px; font-size:12px; background:#f0fdf4; color:#166534; border:1px solid #bbf7d0}
+  .warn{background:#fff7ed; color:#9a3412; border-color:#fed7aa}
+  .danger{background:#fef2f2; color:#991b1b; border-color:#fecaca}
+  .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+  footer{margin:28px 0 0; text-align:center; color:var(--muted); font-size:12px}
+  .hero{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+  .hero .pill{background:#e6f4ff; color:#0b3b6e}
+  .muted{color:var(--muted)}
+  .section-title{display:flex; align-items:center; gap:10px; margin-bottom:6px}
+  .section-title svg{width:18px; height:18px; color:var(--brand)}
+  .kv{display:grid; grid-template-columns: 200px 1fr; gap:10px; align-items:center}
+  .kv .bar{height:12px}
+  .small{font-size:12px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Relatório Completo – Campanhas Google Ads</h1>
+      <p>Money Way Câmbio • Período: <strong>17/07/2025–18/09/2025</strong> vs <strong>14/05/2025–16/07/2025</strong></p>
+      <div class="hero" style="margin-top:10px">
+        <span class="pill">Fonte: Google Ads (extração direta)</span>
+        <span class="pill">Visual clean • Cliente-ready</span>
+      </div>
+    </header>
+
+    <!-- VISÃO GERAL DAS 3 CAMPANHAS -->
+    <section class="card">
+      <div class="section-title">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3V3zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+        <h2>📊 Visão Geral das 3 Campanhas</h2>
+      </div>
+      <div class="grid cols-3">
+        <!-- [S]-compra_moeda -->
+        <div class="card">
+          <div class="row">
+            <h3>[S]-compra_moeda</h3>
+            <span class="tag">Alta escala</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="label">Impressões</div><div class="value">11.545</div><div class="delta down">-7,31%</div></div>
+            <div class="kpi"><div class="label">Cliques</div><div class="value">617</div><div class="delta up">+20%</div></div>
+            <div class="kpi"><div class="label">CTR</div><div class="value">5,34%</div><div class="delta up">+1,22 p.p.</div></div>
+            <div class="kpi"><div class="label">Custo</div><div class="value">R$ 742,78</div><div class="delta down">▲ gasto ↑</div></div>
+            <div class="kpi"><div class="label">CPC méd.</div><div class="value">R$ 1,20</div><div class="delta down">+92,6%</div></div>
+          </div>
+          <p class="note" style="margin-top:10px">👉 Mais volume total (cliques + impressões). CPC relativamente baixo, porém subindo.</p>
+        </div>
+
+        <!-- Remessas Internacionais -->
+        <div class="card">
+          <div class="row">
+            <h3>Remessas Internacionais</h3>
+            <span class="tag">Alta intenção</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="label">Impressões</div><div class="value">1.024</div></div>
+            <div class="kpi"><div class="label">Cliques</div><div class="value">54</div></div>
+            <div class="kpi"><div class="label">CTR</div><div class="value">4,91%</div><div class="delta up">acima do mercado</div></div>
+            <div class="kpi"><div class="label">Custo</div><div class="value">R$ 204,04</div></div>
+            <div class="kpi"><div class="label">CPC méd.</div><div class="value">R$ 3,77</div><div class="delta down">↑ mais caro</div></div>
+          </div>
+          <p class="note" style="margin-top:10px">👉 Clique mais caro, porém qualificado; responde a quem está pronto para enviar dinheiro.</p>
+        </div>
+
+        <!-- Moeda Antiga -->
+        <div class="card">
+          <div class="row">
+            <h3>moeda antiga</h3>
+            <span class="tag">Nicho</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="label">Impressões</div><div class="value">503</div></div>
+            <div class="kpi"><div class="label">Cliques</div><div class="value">33</div></div>
+            <div class="kpi"><div class="label">CTR</div><div class="value">6,57%</div><div class="delta up">melhor CTR</div></div>
+            <div class="kpi"><div class="label">Custo</div><div class="value">R$ 98,90</div></div>
+            <div class="kpi"><div class="label">CPC méd.</div><div class="value">R$ 3,00</div></div>
+          </div>
+          <p class="note" style="margin-top:10px">👉 Nicho menor; CTR excelente → pode captar buscas muito específicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIA & HORA + DISPOSITIVOS -->
+    <section class="grid cols-2">
+      <div class="card">
+        <div class="section-title">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10V3h10v7h2v11H5V10h2zm2-5v5h6V5H9z"/></svg>
+          <h2>⏰ Performance por Dia e Hora</h2>
+        </div>
+        <p>Foco de buscas <strong>segunda a sexta</strong>, entre <strong>9h e 18h</strong>. Baixo resultado em finais de semana e madrugada.</p>
+        <div class="kv">
+          <div class="small muted">Seg–Sex (9–18h)</div>
+          <div class="bar"><span style="width:86%"></span></div>
+          <div class="small muted">Sáb–Dom</div>
+          <div class="bar"><span style="width:22%"></span></div>
+        </div>
+        <div class="callout" style="margin-top:10px">
+          <strong>Recomendação:</strong> restringir agendamento a dias úteis e horário comercial para reduzir desperdício.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4h10v2H7V4zm-2 4h14v12H5V8zm2 2v8h10v-8H7z"/></svg>
+          <h2>📱 Dispositivos</h2>
+        </div>
+        <div class="kv">
+          <div class="small">Smartphones (~90%+)</div>
+          <div class="bar"><span style="width:92%"></span></div>
+          <div class="small">Computadores (~7–8%)</div>
+          <div class="bar"><span style="width:8%"></span></div>
+          <div class="small">Tablets (irrelevante)</div>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+        <p class="note" style="margin-top:8px">Estratégia <strong>mobile-first</strong>: site rápido, CTA WhatsApp fixo, simulador de câmbio amigável.</p>
+      </div>
+    </section>
+
+    <!-- DEMOGRAFIA -->
+    <section class="card">
+      <div class="section-title">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4 0-12 2-12 6v4h24v-4c0-4-8-6-12-6z"/></svg>
+        <h2>👥 Demografia</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card"><h3>Idade</h3><p>Predomínio <strong>25–44 anos</strong> (pico 25–34).</p></div>
+        <div class="card"><h3>Gênero</h3><p>Maior participação de <strong>homens</strong>.</p></div>
+        <div class="card"><h3>Tom de comunicação</h3><p>Enfatizar <strong>praticidade, confiança e preço justo</strong>.</p></div>
+      </div>
+    </section>
+
+    <!-- PALAVRAS-CHAVE -->
+    <section class="grid cols-2">
+      <div class="card">
+        <h2>📈 Palavras-chave (Top performance)</h2>
+        <ul class="list">
+          <li><strong>compra e venda de moeda</strong> → CTR <span class="badge">13,9%</span></li>
+          <li><strong>transferências internacionais</strong> → CTR <span class="badge">6%</span></li>
+          <li><strong>câmbio Porto Alegre</strong> → CTR <span class="badge">5,66%</span></li>
+        </ul>
+        <div class="callout" style="margin-top:10px">
+          <strong>Ação:</strong> manter e ampliar; criar <em>long tails</em> locais: “comprar dólar Porto Alegre”, “cotar euro hoje Porto Alegre”.
+        </div>
+      </div>
+      <div class="card">
+        <h2>⬇️ Menos eficientes / Negativar</h2>
+        <ul class="list">
+          <li><strong>conversão de moeda</strong> → CTR 3,26%</li>
+          <li><strong>casa de câmbio</strong> → CTR 4,29% (ainda relevante, mas abaixo das top)</li>
+          <li class="danger"><strong>“moedas antigas”, “onde vender moedas”, “coleção de moedas”</strong> (drena verba)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TERMOS PESQUISADOS -->
+    <section class="card">
+      <h2>🔍 Pesquisas Reais (Search Terms)</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Intenção de câmbio</h3>
+          <ul class="list">
+            <li>“peso argentino para real”</li>
+            <li>“dólar hoje”</li>
+            <li>“converter peso argentino em real”</li>
+          </ul>
+          <div class="callout"><strong>Sugestão:</strong> Página específica com simulador de cotação em tempo real.</div>
+        </div>
+        <div>
+          <h3>Concorrência & Ruído</h3>
+          <ul class="list">
+            <li>Sendwave, Moneygram, Western Union, Wise, X Transfer</li>
+            <li>“500 lempiras to dollars”, “remessa expressa cotação”</li>
+          </ul>
+          <div class="callout warn"><strong>Ação:</strong> reforçar diferenciais (“cotação rápida, WhatsApp local, confiança em Porto Alegre”). Se não vender <em>moedas antigas</em>, negativar já.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="grid cols-3">
+      <div class="card">
+        <h2>🌐 Redes</h2>
+        <div class="kv">
+          <div>Pesquisa Google — volume</div>
+          <div class="bar"><span style="width:78%"></span></div>
+          <div>Parceiros de pesquisa — menor impacto</div>
+          <div class="bar"><span style="width:22%"></span></div>
+          <div>Rede de Display — cliques baratos, pouca intenção</div>
+          <div class="bar"><span style="width:35%; background:linear-gradient(90deg,#b45309,#f59e0b)"></span></div>
+        </div>
+        <p class="note" style="margin-top:8px">Melhor desempenho na <strong>Pesquisa Google</strong>. Considerar pausar ou reduzir Display.</p>
+      </div>
+      <div class="card">
+        <h2>📉 Comparação com Período Anterior</h2>
+        <ul class="list">
+          <li><strong>Impressões:</strong> +691</li>
+          <li><strong>Cliques:</strong> +190</li>
+          <li><strong>CPC médio:</strong> de 3,92 → 1,49 (otimização de custo)</li>
+          <li><strong>Maior alavanca:</strong> [S]-compra_moeda (escalou volume com CPC baixo)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>🕒 Série Temporal (07–17/09/2025)</h2>
+        <p>Pico de cliques em <strong>10/09</strong> (12 cliques). CPC acompanhou picos → leilão mais competitivo nesses dias.</p>
+        <div class="bar"><span style="width:65%"></span></div>
+        <p class="note" style="margin-top:8px">Ajustar lances e programação para evitar picos caros em baixa conversão.</p>
+      </div>
+    </section>
+
+    <!-- DEEP DIVE: REMESSAS INTERNACIONAIS -->
+    <section class="card">
+      <h2>📊 Visão Geral da Campanha – Remessas Internacionais</h2>
+      <div class="grid cols-3">
+        <div class="kpi"><div class="label">Impressões</div><div class="value">1.024</div></div>
+        <div class="kpi"><div class="label">Cliques</div><div class="value">50</div></div>
+        <div class="kpi"><div class="label">CTR</div><div class="value">4,88%</div><div class="delta up">acima do mercado</div></div>
+        <div class="kpi"><div class="label">CPC médio</div><div class="value">R$ 3,92</div></div>
+        <div class="kpi"><div class="label">Custo</div><div class="value">R$ 196</div></div>
+      </div>
+      <p class="note" style="margin-top:8px">Campanha atrai cliques qualificados, mas o CPC é relativamente alto.</p>
+
+      <div class="grid cols-3" style="margin-top:14px">
+        <div class="card">
+          <h3>📅 Dia & Hora</h3>
+          <p>Terça a quinta, <strong>12h–20h</strong> concentram impressões e cliques.</p>
+        </div>
+        <div class="card">
+          <h3>📱 Dispositivos</h3>
+          <ul class="list">
+            <li>Impressões: <strong>92,4%</strong> mobile</li>
+            <li>Cliques: <strong>96%</strong> mobile</li>
+            <li>Custo: <strong>95,9%</strong> mobile</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>👥 Demografia</h3>
+          <p>Predominam <strong>35–54 anos</strong>; mais homens que mulheres.</p>
+        </div>
+      </div>
+
+      <div class="grid cols-2" style="margin-top:10px">
+        <div class="card">
+          <h3>🔑 Palavras-chave</h3>
+          <ul class="list">
+            <li><strong>transferências internacionais</strong> → 9 cliques, CTR 6,16% (custo alto: R$ 75,44)</li>
+            <li><strong>remessas internacionais</strong> → 2 cliques, CTR 5,56%</li>
+            <li class="muted">Outras com baixa performance: “remessa ao exterior”, “como fazer transferência”…</li>
+          </ul>
+          <div class="callout"><strong>Ação:</strong> focar em termos diretos de compra; testar long tails por destino (“enviar dinheiro EUA/Portugal”).</div>
+        </div>
+        <div class="card">
+          <h3>🔍 Termos Pesquisados</h3>
+          <p>Concorrentes: <em>Sendwave, Moneygram, Western Union, Wise, X Transfer</em>.</p>
+          <p>Buscas de cotação direta: “500 lempiras to dollars”, “remessa expressa cotação”.</p>
+          <div class="callout warn"><strong>Importante:</strong> Anúncios devem reforçar diferenciais (“mais barato que X”, “WhatsApp em minutos”). Criar landing com simulador.</div>
+        </div>
+      </div>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>🌐 Redes</h3>
+          <ul class="list">
+            <li>Pesquisa do Google: <strong>26%</strong> dos cliques (mais qualificada; custo R$ 7,36)</li>
+            <li>Parceiros de pesquisa: <strong>10%</strong></li>
+            <li>Display: <strong>64%</strong> (CPC R$ 2,46 – barato, porém menos intenção)</li>
+          </ul>
+          <div class="callout"><strong>Sugestão:</strong> reduzir/pausar Display; priorizar Pesquisa (Google + parceiros).</div>
+        </div>
+        <div class="card">
+          <h3>🧭 Recomendações finais (Remessas)</h3>
+          <ul class="list checklist">
+            <li>Mobile-first: LP rápida + CTA WhatsApp fixo.</li>
+            <li>Refinar keywords: diretas/comerciais; negativar irrelevantes.</li>
+            <li>Explorar long tails por país/moeda.</li>
+            <li>Destaques nos anúncios: “cotação rápida”, “mais barato que WU”, “confiança local”.</li>
+            <li>Criar simulador de cotação online (eleva conversão real).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSÕES & AÇÕES GERAIS -->
+    <section class="card">
+      <h2>✅ Conclusões e Ações Recomendadas</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Agendamento</h3>
+          <ul class="list checklist">
+            <li>Manter somente <strong>dias úteis (9h–18h)</strong>.</li>
+            <li>Separar campanhas “Dias úteis” vs “FDS” para teste A/B.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Palavras-chave</h3>
+          <ul class="list checklist">
+            <li>Expandir <strong>“compra e venda de moeda”</strong> e <strong>“transferências internacionais”</strong>.</li>
+            <li>Negativar <em>moedas antigas</em> se não for serviço.</li>
+            <li>Testar <em>long tails</em> locais (Porto Alegre, euro hoje, comprar dólar).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Landing Pages</h3>
+          <ul class="list checklist">
+            <li>Simulador de cotação (peso/dólar/euro).</li>
+            <li>Performance mobile (LCP &lt; 2,5s).</li>
+            <li>CTA fixo para WhatsApp.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Campanhas</h3>
+          <ul class="list checklist">
+            <li><strong>[S]-compra_moeda:</strong> grande escala, otimizar custos.</li>
+            <li><strong>Remessas Internacionais:</strong> premium; priorizar.</li>
+            <li><strong>moeda antiga:</strong> manter se converter; senão, negativar termos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Orçamento</h3>
+          <ul class="list checklist">
+            <li>Alocar mais verba para <strong>[S]-compra_moeda</strong> (CPC barato, escala alta).</li>
+            <li>Manter “Remessas” como campanha de alta conversão (CPC mais caro, porém ROI).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Redes</h3>
+          <ul class="list checklist">
+            <li>Foco em <strong>Pesquisa Google</strong>.</li>
+            <li>Reduzir/pausar <strong>Display</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>Relatório preparado para apresentação a cliente – Visual clean • © 2025 Money Way Câmbio</footer>
+  </div>
+</body>
+</html>
